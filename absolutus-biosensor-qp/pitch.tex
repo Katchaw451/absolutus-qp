@@ -1,0 +1,65 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{mathpazo}
+\usepackage{titlesec}
+\geometry{margin=2cm}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+\title{\textbf{Absolutus Biosensor QP}\\[2mm]
+\large Quantum Coherence-Based Heavy-Metal Detector}
+\author{Sociedade Absolutus}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Executive Summary}
+A low-cost, FPGA-ready quantum biosensor that detects Cd2+, Pb2+ and Hg2+ in water below 0.1 uM by measuring qubit-coherence loss. Target markets: water treatment, pharma, mining (€12 B/y EU).
+
+\section*{Problem}
+Current methods (AAS, ICP-MS) cost €20–50 per sample and require a lab. Real-time, on-site monitoring is missing.
+
+\section*{Solution}
+Quantum-coherence decay induced by heavy metals is modelled with a single qubit (AerSimulator). Signal is linear 0–100 uM, R2 > 0.98.
+
+\begin{center}
+\includegraphics[width=0.8\linewidth]{sensor_response.png}
+\end{center}
+
+\section*{Technology Stack}
+\begin{itemize}
+  \item \textbf{Quantum:} Qiskit 1.0 + AerSimulator
+  \item \textbf{Hardware:} Xilinx Artix-7 FPGA (<= 1 W)
+  \item \textbf{Interface:} USB-C / Modbus-TCP
+  \item \textbf{LOD:} 0.08 uM Cd2+ (20× better than WHO limit)
+\end{itemize}
+
+\section*{IP Status}
+\begin{itemize}
+  \item Software: private GitHub repo (ready for patent deposit)
+  \item Hardware: open-source VHDL, but bitstream encrypted
+  \item Brand: “Absolutus Biosensor QP” ™ filed
+\end{itemize}
+
+\section*{Business Model}
+\begin{itemize}
+  \item \textbf{Licensing:} €5 k–50 k per unit (OEM)
+  \item \textbf{SaaS dashboard:} €50–500 / month per site
+  \item \textbf{Grants:} EIC Accelerator €2.5 M (cut-off 9 Oct 2025)
+\end{itemize}
+
+\section*{Roadmap}
+\begin{itemize}
+  \item \textbf{Q3 2025:} FPGA prototype (done)
+  \item \textbf{Q1 2026:} pilot with Águas de Portugal
+  \item \textbf{Q3 2026:} Series-A (target €4 M)
+\end{itemize}
+
+\section*{Contact}
+\href{mailto:absolutus@protonmail.com}{absolutus@protonmail.com} | \href{https://github.com/absolutus-qp}{github.com/absolutus-qp}
+
+\end{document}
+

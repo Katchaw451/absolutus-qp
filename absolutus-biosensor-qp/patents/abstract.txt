@@ -1,0 +1,4 @@
+Title: Quantum Coherence-Based Heavy Metal Biosensor Using Qiskit and FPGA
+
+Abstract:
+A low-cost, high-sensitivity biosensor for detecting heavy metals (Cd²⁺, Pb²⁺, Hg²⁺) in water samples using quantum coherence loss as a measurable signal. The system combines Qiskit-based quantum simulation with FPGA-based real-time processing. The sensor outputs a digital coherence loss index proportional to metal concentration, with detection limits below 0.1 µM.

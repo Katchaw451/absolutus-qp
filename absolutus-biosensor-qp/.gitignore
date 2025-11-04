@@ -1,0 +1,5 @@
+# Não expor
+*.key
+*.env
+*.log
+raw_data/
